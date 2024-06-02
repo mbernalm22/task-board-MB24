@@ -1,6 +1,14 @@
 //Todo: Create a function that generates a unique task id
 function generateTask() {
 
+    if(localStorage.getItem('nextId') === null){
+        localStorage.setItem('nextId', 1);
+        return 0;
+    }
+    
+    let currentId = parseInt(localStorage.getItem('nextId'));
+    localStorage.setItem('nextId', currentId + 1);
+    return currentId;
 }
 
 // Todo: create a function to create a task card
