@@ -9,8 +9,13 @@ body {
 
 .task-card {
   margin: 0 auto;
+  border: 5px solid black;
+  height: auto;
 }
 
 .task-card:hover {
   cursor: grab;
+}
+.card-divs{
+  margin: 10px;
 }
